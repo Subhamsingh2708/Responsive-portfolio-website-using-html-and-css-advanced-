@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subham| Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- INTERNAL CSS (Everything in ONE FILE) -->
+  <style>
+
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: #004f9f;
+      color: white;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      opacity: 0.7;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-text h2 {
+      font-size: 2.2rem;
+      font-weight: 400;
+    }
+
+    .hero-role {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff5722;
+      animation: colorChange 4s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% { color: #ff5722; }
+      100% { color: #ff8a50; }
+    }
+
+    .hero-text p {
+      margin-top: 1rem;
+      width: 70%;
+      color: #555;
+    }
+
+    .hero-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #e0e0e0;
+    }
+
+    /* Sections */
+    section {
+      padding: 2.5rem 2rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .skill-card {
+      background: #0a66c2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.06);
+    }
+
+    .skill-card span {
+      display: block;
+      margin-top: 0.4rem;
+      font-weight: 300;
+    }
+
+    /* PROJECT CARDS */
+    .project-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    /* CONTACT BOX */
+    .contact-box {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 2px solid #c8c8c8;
+      border-radius: 5px;
+    }
+
+    .contact-box button {
+      width: 100%;
+      background: #004f9f;
+      color: white;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-box button:hover {
+      background: #003b7a;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #004f9f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .hero-text p {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">My Portfolio</div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hi, I am</h2>
+      <h1 class="hero-role">Subham</h1>
+      <p>Building moder web applications with MERN stack.</p>
+    </div>
+
+    <img src="SUBHAMPIC.jpeg" alt="Profile Photo" class="hero-img" width="200px" />
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is Subham Kumar Singh and I am currently learning web devlopment.This is my first porfolio website where I showcase my passion for creating interactive and responsive webpages.I am 
+      student at KR MANGALAM UNIVERSITY,pursuing a BTECH deegre,and I am deeply intrested in technology and coding.I love exploring new skills every day,and  I always aim to improve my
+      knowledge in thr field of web devlopment with a hardworking and consistent mindset.I am determined to grow as a devloper and build creative projects tht make a real impact.<a href=""></a>
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">HTML <span>Beginner</span></div>
+      <div class="skill-card">CSS <span>Beginner</span></div>
+      <div class="skill-card">JavaScript <span>Learning</span></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>A basic HTML webpage.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Another simple webpage built with HTML & CSS.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+      <form>
+        <label>Name</label>
+        <input type="text" required />
+
+        <label>Email</label>
+        <input type="email" required />
+
+        <label>Message</label>
+        <textarea required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Subham. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
